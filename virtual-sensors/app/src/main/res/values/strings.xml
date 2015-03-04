@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Virtual Sensors</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Replace me with the working Nervousnet MainActivity!</string>
+    <string name="action_settings">Settings</string>
+</resources>
