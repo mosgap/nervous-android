@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    <color name="orange_nervous">#F15F18</color>
+    <color name="gray_nervous_dark">#555555</color>
+    <color name="gray_nervous_light">#DDDDDD</color>
+</resources>

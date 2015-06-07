@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                tools:context="ch.ethz.soms.nervous.virtualsensors.VirtualSensorDialogActivity">
+
+        <RelativeLayout
+                android:id="@+id/dialog_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray_nervous_dark"
+                android:padding="@dimen/abc_control_padding_material">
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/nn"
+                        android:id="@+id/dialog_imageView_logo"
+                        android:layout_toLeftOf="@+id/dialog_button_settings"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:padding="@dimen/abc_control_padding_material"/>
+
+                <ImageView
+                        android:layout_width="@dimen/abc_action_button_min_height_material"
+                        android:layout_height="@dimen/abc_action_button_min_height_material"
+                        android:src="@drawable/actionoverflow"
+                        android:id="@+id/dialog_button_settings"
+                        android:layout_alignParentRight="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:layout_margin="@dimen/abc_control_padding_material"
+                        android:onClick="onActionSettings"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/dialog_text_view_message"
+                android:text="N/A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/dialog_header"
+                android:textColor="@color/gray_nervous_dark"
+                android:focusable="true" android:focusableInTouchMode="true"
+                android:textStyle="bold"
+                android:layout_margin="20dp"/>
+
+        <ScrollView
+                android:id="@+id/dialog_radio_buttons_scroll_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/dialog_text_view_message"
+                android:layout_above="@+id/dialog_buttons"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <RadioGroup
+                                android:id="@+id/dialog_radio_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                        </RadioGroup>
+
+                        <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dialog_editText_input"
+                                android:textColor="@color/gray_nervous_dark"
+                                android:hint="@string/dialog_input_hint"
+                                android:ems="12"/>
+                </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+                android:id="@+id/dialog_buttons"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/dialog_button_ignore"
+                        android:id="@+id/dialog_button_ignore"
+                        android:onClick="onActionIgnore"
+                        android:background="@android:color/transparent"/>
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/dialog_button_submit"
+                        android:id="@+id/dialog_button_submit"
+                        android:onClick="onActionSubmit"
+                        android:background="@android:color/transparent"/>
+        </LinearLayout>
+</RelativeLayout>

@@ -1,8 +1,20 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.VirtualSensorSettings" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="Theme.VirtualSensorDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
 
 </resources>

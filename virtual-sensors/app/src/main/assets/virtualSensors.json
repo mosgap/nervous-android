@@ -1,0 +1,196 @@
+{
+    "virtualSensorModels": [
+        {
+            "sensorId": "VIRTUAL_SENSOR_1",
+            "message": "What type of transport did you use today?",
+            "category": "Activity",
+            "optionsType": 1,
+            "options": [
+                "Public transport",
+                "Taxi",
+                "Bicycle",
+                "By foot",
+                "None"
+            ],
+            "defaultInterval": [
+                "Ask once a day",
+                "1440"
+            ],
+            "intervalTypes": [
+                "Ask every 3 minutes",
+                "Ask every 15 minutes",
+                "Ask every 30 minutes",
+                "Ask every 1 hour",
+                "Ask every 3 hours",
+                "Ask every 6 hours",
+                "Ask once a day",
+                "Ask every week",
+                "Ask every month",
+                "Never"
+            ],
+            "intervalValues": [
+                "3",
+                "15",
+                "30",
+                "60",
+                "180",
+                "360",
+                "1440",
+                "10080",
+                "43200",
+                "-1"
+            ]
+        },
+        {
+            "sensorId": "VIRTUAL_SENSOR_2",
+            "message": "How long did you do a physical exercise today (in total minutes)?",
+            "category": "Activity",
+            "optionsType": 0,
+            "options": [],
+            "defaultInterval": [
+                "Ask once a day",
+                "1440"
+            ],
+            "intervalTypes": [
+                "Ask every 3 minutes",
+                "Ask every 15 minutes",
+                "Ask every 30 minutes",
+                "Ask every 1 hour",
+                "Ask every 3 hours",
+                "Ask every 6 hours",
+                "Ask once a day",
+                "Ask every week",
+                "Ask every month",
+                "Never"
+            ],
+            "intervalValues": [
+                "3",
+                "15",
+                "30",
+                "60",
+                "180",
+                "360",
+                "1440",
+                "10080",
+                "43200",
+                "-1"
+            ]
+        },
+        {
+            "sensorId": "VIRTUAL_SENSOR_3",
+            "message": "How many new people did you talk with today?",
+            "category": "Activity",
+            "optionsType": 2,
+            "options": [
+                "1",
+                "2"
+            ],
+            "defaultInterval": [
+                "Ask once a day",
+                "1440"
+            ],
+            "intervalTypes": [
+                "Ask every 3 minutes",
+                "Ask every 15 minutes",
+                "Ask every 30 minutes",
+                "Ask every 1 hour",
+                "Ask every 3 hours",
+                "Ask every 6 hours",
+                "Ask once a day",
+                "Ask every week",
+                "Ask every month",
+                "Never"
+            ],
+            "intervalValues": [
+                "3",
+                "15",
+                "30",
+                "60",
+                "180",
+                "360",
+                "1440",
+                "10080",
+                "43200",
+                "-1"
+            ]
+        },
+        {
+            "sensorId": "VIRTUAL_SENSOR_4",
+            "message": "What is the level of noise around you?",
+            "category": "Environment",
+            "optionsType": 1,
+            "options": [
+                "Normal",
+                "Noisy",
+                "Silent"
+            ],
+            "defaultInterval": [
+                "Ask every 1 hour",
+                "60"
+            ],
+            "intervalTypes": [
+                "Ask every 3 minutes",
+                "Ask every 15 minutes",
+                "Ask every 30 minutes",
+                "Ask every 1 hour",
+                "Ask every 3 hours",
+                "Ask every 6 hours",
+                "Ask once a day",
+                "Ask every week",
+                "Ask every month",
+                "Never"
+            ],
+            "intervalValues": [
+                "3",
+                "15",
+                "30",
+                "60",
+                "180",
+                "360",
+                "1440",
+                "10080",
+                "43200",
+                "-1"
+            ]
+        },
+        {
+            "sensorId": "VIRTUAL_SENSOR_5",
+            "message": "How comfortable is the current indoor temperature for you?",
+            "category": "Environment",
+            "optionsType": 1,
+            "options": [
+                "Normal",
+                "Cold",
+                "Hot"
+            ],
+            "defaultInterval": [
+                "Ask every 1 hour",
+                "60"
+            ],
+            "intervalTypes": [
+                "Ask every 3 minutes",
+                "Ask every 15 minutes",
+                "Ask every 30 minutes",
+                "Ask every 1 hour",
+                "Ask every 3 hours",
+                "Ask every 6 hours",
+                "Ask once a day",
+                "Ask every week",
+                "Ask every month",
+                "Never"
+            ],
+            "intervalValues": [
+                "3",
+                "15",
+                "30",
+                "60",
+                "180",
+                "360",
+                "1440",
+                "10080",
+                "43200",
+                "-1"
+            ]
+        }
+    ]
+}

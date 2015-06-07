@@ -2,24 +2,40 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ch.ethz.soms.nervous.virtualsensors" >
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".ui.SettingsActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".ui.MainActivity"
-            android:label="@string/title_activity_main" >
-            <intent-filter>
+            android:name=".VirtualSensorSettingsActivity"
+            android:label="@string/title_activity_virtual_sensor_settings"
+            android:theme="@style/Theme.VirtualSensorSettings" >
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".VirtualSensorDialogActivity"
+            android:exported="true"
+            android:label="@string/title_activity_virtual_sensor_dialog"
+            android:theme="@style/Theme.VirtualSensorDialog" >
+        </activity>
+
+        <receiver android:name=".AlarmToScheduleNotificationReceiver" />
+        <receiver
+            android:name=".InitAlarmsBootReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".ScheduledNotificationService" />
     </application>
 
 </manifest>
